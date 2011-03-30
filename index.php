@@ -47,7 +47,7 @@ if(count($keys) == 1){
 <p>Create syntax:<br />
 <input type="text" name="syntax" id="syntax" size="80" /></p>
 <div id="error"></div>
-<p><input type="submit" value="Generate" /></p>
+<p><input type="submit" value="Generate" id="button" /></p>
 </form>
 
 <div id="stuff"></div>
