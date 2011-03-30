@@ -70,7 +70,11 @@ function checkData(){
 			if((eval(male)+eval(female))>all){
 				var allimg = '<img src="img/all.png" alt="all" /> ';
 			}else{
-				var allimg = "";
+				if(all == 0){
+					var allimg = '<img src="img/all.png" alt="all" /> ';
+				}else{
+					var allimg = "";
+				}
 			}
 		}
 	}

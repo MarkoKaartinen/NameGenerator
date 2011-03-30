@@ -11,9 +11,6 @@
 </head>
 <body>
 <?php
-//for debugging
-error_reporting(-1);
-
 include("config.php");
 
 $keys = array_keys($langs);
@@ -33,7 +30,7 @@ if(count($keys) == 1){
 <form action="" method="post" id="namegenform">
 <?php if($lang == ""){ ?>
 	<p>Choose language file:<br />
-	<select name="lang">
+	<select name="lang" id="lang">
 		<?php
 		for($i=0; $i < count($keys); $i++){
 			echo "<option value=\"".$keys[$i]."\">".$keys[$i]." - ".$langs[$keys[$i]]."</option>";
@@ -41,11 +38,11 @@ if(count($keys) == 1){
 		?>
 	</select>
 	</p>
-<?php } ?>
-<p>Choose how many names you want to generate:<br/>
-<input type="text" name="male" id="male" size="5" /> <input type="text" name="female" id="female" size="5" /> <input type="text" name="all" id="all" size="5" /></p>
-<p>Create syntax:<br />
-<input type="text" name="syntax" id="syntax" size="80" /></p>
+<?php }else{ echo "<input type=\"hidden\" name=\"lang\" value=\"".$lang."\" id=\"lang\" >"; } ?>
+<p>Choose how many names you want to generate: <small>(male/female/total)</small><br/>
+<input type="text" name="male" id="male" size="5" value="0" /> <input type="text" name="female" id="female" size="5" value="0" /> <input type="text" name="all" id="all" size="5" /></p>
+<p>Syntax:<br />
+<input type="text" name="syntax" id="syntax" size="80" value="[FIRST] [LAST]" /></p>
 <div id="error"></div>
 <p><input type="submit" value="Generate" id="button" /></p>
 </form>
