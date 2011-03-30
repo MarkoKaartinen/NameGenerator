@@ -9,11 +9,11 @@
 }
 
 #all {
-	background: url(img/group.png) no-repeat right center;
+	background: url(img/all.png) no-repeat right center;
 	padding:4px;
 }
 
 #syntax {
-	background: url(img/keyboard.png) no-repeat right center;
+	background: url(img/syntax.png) no-repeat right center;
 	padding:4px;
 }

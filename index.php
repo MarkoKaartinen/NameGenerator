@@ -46,7 +46,11 @@ if(count($keys) == 1){
 <input type="text" name="male" id="male" size="5" /> <input type="text" name="female" id="female" size="5" /> <input type="text" name="all" id="all" size="5" /></p>
 <p>Create syntax:<br />
 <input type="text" name="syntax" id="syntax" size="80" /></p>
+<div id="error"></div>
 <p><input type="submit" value="Generate" /></p>
 </form>
+
+<div id="stuff"></div>
+
 </body>
 </html>
