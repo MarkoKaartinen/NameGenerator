@@ -1,19 +1,19 @@
 #male {
-	background: url(male.png) no-repeat right center;
+	background: url(img/male.png) no-repeat right center;
 	padding:4px;
 }
 
 #female {
-	background: url(female.png) no-repeat right center;
+	background: url(img/female.png) no-repeat right center;
 	padding:4px;
 }
 
 #all {
-	background: url(group.png) no-repeat right center;
+	background: url(img/group.png) no-repeat right center;
 	padding:4px;
 }
 
 #syntax {
-	background: url(keyboard.png) no-repeat right center;
+	background: url(img/keyboard.png) no-repeat right center;
 	padding:4px;
 }
