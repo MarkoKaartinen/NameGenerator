@@ -11,13 +11,16 @@ function generoi(){
 		var male = $("#male").val();
 		var female = $("#female").val();
 		var all = $("#all").val();
-		var syntax = $("#syntax").val();
+		var syntax = escape($("#syntax").val());
+		var lang = $("#lang").val();
 	
 		$("#stuff").html('<div id="loading">Please wait, loading...</div>');
-		$("#stuff").load("generate.php?");
-	}
+		//$("#stuff").load("generate.php");
+		$("#stuff").load("generate.php?lang="+lang+"&s="+syntax+"&ma="+male+"&fe="+female+"&all="+all);
 		
-	return false;
+		return false;
+	}
+	return false;		
 }
 
 function updateAll(){

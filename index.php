@@ -40,7 +40,7 @@ if(count($keys) == 1){
 	</p>
 <?php }else{ echo "<input type=\"hidden\" name=\"lang\" value=\"".$lang."\" id=\"lang\" >"; } ?>
 <p>Choose how many names you want to generate: <small>(male/female/total)</small><br/>
-<input type="text" name="male" id="male" size="5" value="0" /> <input type="text" name="female" id="female" size="5" value="0" /> <input type="text" name="all" id="all" size="5" /></p>
+<input type="text" name="male" id="male" size="5" value="4" /> <input type="text" name="female" id="female" size="5" value="4" /> <input type="text" name="all" id="all" size="5" value="10" /></p>
 <p>Syntax:<br />
 <input type="text" name="syntax" id="syntax" size="80" value="[FIRST] [LAST]" /></p>
 <div id="error"></div>
